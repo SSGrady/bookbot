@@ -1,12 +1,16 @@
+import sys
 from stats import get_num_words, get_character_count, sort_dict_list
 
 def get_book_text():
-    with open("./books/frankenstein.txt") as f:
+    with open(sys.argv[1]) as f:
         file_contents = f.read()
         return file_contents
 
 
 def main():
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        return sys.exit(1)
     corpus = get_book_text()
     print("============ BOOKBOT ============")
     print("Analyzing book found at books/frankenstein.txt...")
