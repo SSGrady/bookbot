@@ -13,7 +13,7 @@ def main():
         return sys.exit(1)
     corpus = get_book_text()
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at books/{sys.argv[1]}...")
     print("----------- Word Count ----------")
     num_words = get_num_words(corpus)
     print(f"Found {num_words} total words")
