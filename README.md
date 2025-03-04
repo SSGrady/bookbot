@@ -29,8 +29,8 @@ E.g. onboarding workflow,
  Continuing the moby dick example:
 
  ```py
- ============ BOOKBOT ============
-Analyzing book found at books/frankenstein.txt...
+============ BOOKBOT ============
+Analyzing book found at books/books/mobydick.txt...
 ----------- Word Count ----------
 Found 215838 total words
 --------- Character Count -------
